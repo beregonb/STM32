@@ -1,0 +1,35 @@
+09:37:14 **** Incremental Build of configuration Debug for project Project-4 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc  -u_printf_float -o "Project-4.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Gorkovenko KO-1\STM32\Project-4\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Project-4.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Project-4.elf
+ 
+arm-none-eabi-size   Project-4.elf 
+arm-none-eabi-objdump -h -S  Project-4.elf  > "Project-4.list"
+   text	   data	    bss	    dec	    hex	filename
+  26668	    508	   1764	  28940	   710c	Project-4.elf
+Finished building: default.size.stdout
+ 
+Finished building: Project-4.list
+ 
+09:37:55 **** Incremental Build of configuration Debug for project Project-4 ****
+make -j8 all 
+arm-none-eabi-size   Project-4.elf 
+   text	   data	    bss	    dec	    hex	filename
+  26668	    508	   1764	  28940	   710c	Project-4.elf
+Finished building: default.size.stdout
+ 
+09:39:35 **** Incremental Build of configuration Debug for project Project-4 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc  -u_printf_float -o "Project-4.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Gorkovenko KO-1\STM32\Project-4\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Project-4.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Project-4.elf
+ 
+arm-none-eabi-size   Project-4.elf 
+arm-none-eabi-objdump -h -S  Project-4.elf  > "Project-4.list"
+   text	   data	    bss	    dec	    hex	filename
+  26716	    508	   1764	  28988	   713c	Project-4.elf
+Finished building: default.size.stdout
+ 
+Finished building: Project-4.list
+ 
